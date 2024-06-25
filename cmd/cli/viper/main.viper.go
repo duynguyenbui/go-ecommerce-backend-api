@@ -29,10 +29,6 @@ func main() {
 		panic(fmt.Errorf("fatal error config file: %w", err))
 	}
 
-	// read server configuration
-	fmt.Println("Server Port:::", viper.GetInt("server.port"))
-	fmt.Println("Security Key:::", viper.GetString("security.jwt.key")) // Assuming security key is a string
-
 	// configure structure
 	var config Config
 	if err := viper.Unmarshal(&config); err != nil {
