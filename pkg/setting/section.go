@@ -1,7 +1,7 @@
 package setting
 
 type Config struct {
-	MySQLSetting MySQLSetting  `mapstructure:"mysql"`
+	MySQL MySQLSetting  `mapstructure:"mysql"`
 	Logger       LoggerSetting `mapstructure:"logger"`
 }
 
